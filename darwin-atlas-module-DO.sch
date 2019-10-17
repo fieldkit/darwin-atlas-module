@@ -297,6 +297,32 @@
 <text x="0" y="4.5516" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-4.385" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SON125P300X500X110-8" urn="urn:adsk.eagle:footprint:11890245/2" library_version="30">
+<description>8-SON, 1.25 mm pitch, 5.00 X 3.00 X 1.10 mm body
+&lt;p&gt;8-pin SON package with 1.25 mm pitch with body size 5.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
+<circle x="-2.004" y="2.6699" radius="0.25" width="0" layer="21"/>
+<circle x="0" y="-1.27" radius="0.40160625" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.4199" x2="-1.5" y2="2.5" width="0.12" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.12" layer="21"/>
+<wire x1="1.5" y1="2.5" x2="1.5" y2="2.4199" width="0.12" layer="21"/>
+<wire x1="-1.5" y1="-2.4199" x2="-1.5" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="-1.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="1.5" y2="-2.4199" width="0.12" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="-1.5" y2="-2.5" width="0.12" layer="51"/>
+<wire x1="-1.5" y1="-2.5" x2="-1.5" y2="2.5" width="0.12" layer="51"/>
+<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.12" layer="51"/>
+<wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.12" layer="51"/>
+<smd name="1" x="-1.15" y="1.875" dx="1.4118" dy="0.5818" layer="1" roundness="100"/>
+<smd name="2" x="-1.15" y="0.625" dx="1.4118" dy="0.5818" layer="1" roundness="100"/>
+<smd name="3" x="-1.15" y="-0.625" dx="1.4118" dy="0.5818" layer="1" roundness="100"/>
+<smd name="4" x="-1.15" y="-1.875" dx="1.4118" dy="0.5818" layer="1" roundness="100"/>
+<smd name="5" x="1.15" y="-1.875" dx="1.4118" dy="0.5818" layer="1" roundness="100"/>
+<smd name="6" x="1.15" y="-0.625" dx="1.4118" dy="0.5818" layer="1" roundness="100"/>
+<smd name="7" x="1.15" y="0.625" dx="1.4118" dy="0.5818" layer="1" roundness="100"/>
+<smd name="8" x="1.15" y="1.875" dx="1.4118" dy="0.5818" layer="1" roundness="100"/>
+<text x="0" y="3.5549" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.135" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="M20-7810645" urn="urn:adsk.eagle:package:11839232/3" type="model" library_version="18">
@@ -339,6 +365,13 @@
 &lt;p&gt;20-pin SOP package with 0.65 mm pitch, 7.80 mm span with body size 7.20 X 5.30 X 2.00 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOP65P780X200-20"/>
+</packageinstances>
+</package3d>
+<package3d name="SON125P300X500X110-8" urn="urn:adsk.eagle:package:11890235/2" type="model" library_version="30">
+<description>8-SON, 1.25 mm pitch, 5.00 X 3.00 X 1.10 mm body
+&lt;p&gt;8-pin SON package with 1.25 mm pitch with body size 5.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SON125P300X500X110-8"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -428,6 +461,24 @@
 <wire x1="-12.7" y1="-22.86" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
 <text x="-12.7" y="8.382" size="1.778" layer="94">&gt;NAME</text>
 <text x="0" y="-20.32" size="1.778" layer="94" align="center">ADM3260</text>
+</symbol>
+<symbol name="MPL3115A2" urn="urn:adsk.eagle:symbol:11891722/1" library_version="30">
+<description>MPL3115A2
+&lt;br/&gt;Precision pressure sensor with Altimetry</description>
+<pin name="VDD" x="-17.78" y="7.62" length="middle"/>
+<pin name="VDDIO" x="-17.78" y="5.08" length="middle"/>
+<pin name="CAP" x="-17.78" y="-2.54" length="middle"/>
+<pin name="GND" x="-17.78" y="-10.16" length="middle"/>
+<pin name="INT" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="INT1" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="7.62" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="10.414" size="1.27" layer="95">&gt;NAME</text>
+<text x="3.81" y="-5.588" size="1.27" layer="94" rot="R180">MPL3115A2</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -594,6 +645,33 @@
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:12214775/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MPL3115A2" urn="urn:adsk.eagle:component:11891724/2" prefix="U" library_version="30">
+<description>MPL3115A2
+&lt;br/&gt;Precision pressure sensor with altimetry.</description>
+<gates>
+<gate name="G$1" symbol="MPL3115A2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="LGA8" package="SON125P300X500X110-8">
+<connects>
+<connect gate="G$1" pin="CAP" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="INT" pad="5"/>
+<connect gate="G$1" pin="INT1" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="8"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VDDIO" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11890235/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -13807,21 +13885,27 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.5k"/>
 <part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 <part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
+<part name="U2" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="MPL3115A2" device="LGA8" package3d_urn="urn:adsk.eagle:package:11890235/2"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="10uf"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value=".1uf"/>
+<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value=".1uf"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="43.18" y="66.04" size="7.62" layer="97">CONNECTORS</text>
+<text x="134.62" y="66.04" size="7.62" layer="97">CONNECTORS</text>
 <text x="43.18" y="-91.44" size="7.62" layer="97">POWER</text>
 <text x="134.62" y="-91.44" size="7.62" layer="97">EEPROM</text>
-<wire x1="40.64" y1="114.3" x2="193.04" y2="114.3" width="1.27" layer="97"/>
+<wire x1="40.64" y1="114.3" x2="119.38" y2="114.3" width="1.27" layer="97"/>
+<wire x1="119.38" y1="114.3" x2="193.04" y2="114.3" width="1.27" layer="97"/>
 <wire x1="193.04" y1="114.3" x2="193.04" y2="63.5" width="1.27" layer="97"/>
 <wire x1="193.04" y1="63.5" x2="119.38" y2="63.5" width="1.27" layer="97"/>
 <wire x1="119.38" y1="63.5" x2="40.64" y2="63.5" width="1.27" layer="97"/>
 <wire x1="40.64" y1="63.5" x2="40.64" y2="114.3" width="1.27" layer="97"/>
 <wire x1="40.64" y1="63.5" x2="40.64" y2="-35.56" width="1.27" layer="97"/>
 <wire x1="40.64" y1="-35.56" x2="119.38" y2="-35.56" width="1.27" layer="97"/>
-<wire x1="119.38" y1="-35.56" x2="119.38" y2="63.5" width="1.27" layer="97"/>
+<wire x1="119.38" y1="-35.56" x2="119.38" y2="15.24" width="1.27" layer="97"/>
+<wire x1="119.38" y1="15.24" x2="119.38" y2="63.5" width="1.27" layer="97"/>
 <wire x1="119.38" y1="-35.56" x2="132.08" y2="-35.56" width="1.27" layer="97"/>
 <wire x1="132.08" y1="-35.56" x2="243.84" y2="-35.56" width="1.27" layer="97"/>
 <wire x1="132.08" y1="-93.98" x2="243.84" y2="-93.98" width="1.27" layer="97"/>
@@ -13836,6 +13920,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <text x="43.18" y="-33.02" size="7.62" layer="97">MODULE</text>
 <text x="121.92" y="-33.02" size="7.62" layer="97">ISOLATOR</text>
 <wire x1="243.84" y1="63.5" x2="243.84" y2="-35.56" width="1.27" layer="97"/>
+<wire x1="119.38" y1="15.24" x2="119.38" y2="114.3" width="1.27" layer="97"/>
+<text x="53.34" y="66.04" size="7.62" layer="97">PRS. SESNOR</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="160.02" y="91.44" smashed="yes">
@@ -13924,6 +14010,21 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <attribute name="NAME" x="218.44" y="-9.144" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="218.44" y="-6.096" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
+<instance part="U2" gate="G$1" x="88.9" y="91.44" smashed="yes">
+<attribute name="NAME" x="76.2" y="101.854" size="1.27" layer="95"/>
+</instance>
+<instance part="C3" gate="G$1" x="60.96" y="96.52" smashed="yes">
+<attribute name="NAME" x="61.976" y="97.155" size="1.778" layer="95"/>
+<attribute name="VALUE" x="61.976" y="92.329" size="1.778" layer="96"/>
+</instance>
+<instance part="C12" gate="G$1" x="53.34" y="96.52" smashed="yes">
+<attribute name="NAME" x="54.356" y="97.155" size="1.778" layer="95"/>
+<attribute name="VALUE" x="54.356" y="92.329" size="1.778" layer="96"/>
+</instance>
+<instance part="C16" gate="G$1" x="68.58" y="86.36" smashed="yes">
+<attribute name="NAME" x="69.596" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="69.596" y="82.169" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13990,6 +14091,22 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <wire x1="149.86" y1="25.4" x2="149.86" y2="22.86" width="0.1524" layer="91"/>
 <junction x="149.86" y="22.86"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<wire x1="71.12" y1="81.28" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
+<label x="45.72" y="81.28" size="1.778" layer="95"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="81.28" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
+<junction x="68.58" y="81.28"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="91.44" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
+<junction x="53.34" y="81.28"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="91.44" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
+<junction x="60.96" y="81.28"/>
+<wire x1="53.34" y1="81.28" x2="45.72" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3V3" class="0">
 <segment>
@@ -14028,6 +14145,22 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <junction x="149.86" y="33.02"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <junction x="142.24" y="33.02"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VDD"/>
+<wire x1="71.12" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
+<label x="45.72" y="99.06" size="1.778" layer="95"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
+<junction x="60.96" y="99.06"/>
+<wire x1="53.34" y1="99.06" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
+<junction x="53.34" y="99.06"/>
+<pinref part="U2" gate="G$1" pin="VDDIO"/>
+<wire x1="71.12" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="96.52" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
+<junction x="66.04" y="99.06"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -14069,6 +14202,11 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <wire x1="165.1" y1="12.7" x2="152.4" y2="12.7" width="0.1524" layer="91"/>
 <label x="154.94" y="12.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="SDA"/>
+<wire x1="104.14" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
+<label x="109.22" y="96.52" size="1.778" layer="95" align="bottom-right"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -14090,6 +14228,11 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <pinref part="U$3" gate="G$1" pin="SCL2"/>
 <wire x1="165.1" y1="15.24" x2="152.4" y2="15.24" width="0.1524" layer="91"/>
 <label x="154.94" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="SCL"/>
+<wire x1="104.14" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<label x="109.22" y="99.06" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="WC" class="0">
@@ -14311,6 +14454,13 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="CAP" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="CAP"/>
+<wire x1="71.12" y1="88.9" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
